@@ -1,3 +1,5 @@
+require('dotenv').config(); // Load environment variables
+
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
@@ -14,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Multer setup for file uploads
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'public/uploads/');
+    cb(null, process.env.UPLOAD_DIR);
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + path.extname(file.originalname));
