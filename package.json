@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "echo 'Build script not defined yet'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
