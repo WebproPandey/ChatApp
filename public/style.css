@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ece5dd;
+  margin: 0;
+  padding: 0;
+}
+
+#chat-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#chat-window {
+  height: 500px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: #ece5dd;
+}
+#chat-window::-webkit-scrollbar{
+    display: none;
+}
+.message {
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+
+  }
+
+.message.left {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    width: 50%;
+
+}
+
+.message.right {
+    background-color: #aff17c;
+    width: 50%;
+
+
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #999;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+#feedback {
+  color: grey;
+  padding: 10px;
+  font-style: italic;
+}
+
+input[type="text"], input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #128c7e;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App - Register</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+   
+</style>
+
+</head>
+<body>
+  <div id="register-container" class="h-screen w-full flex flex-col justify-center items-center">
+    <div class="form-container h-auto w-[90%] sm:w-[70%] md:w-[50%] lg:w-[40%] xl:w-[30%] bg-gray-500/40 rounded-lg flex flex-col justify-evenly items-center p-4">
+      <h2 class="text-green-600 text-2xl font-[400] text-center">Register and Join Chat Room</h2>
+      <form class="flex flex-col justify-center items-center w-full" id="register-form" action="/chat" method="get">
+        <input class="outline-none p-2 m-2 rounded-lg w-full" id="username" name="username" type="text" placeholder="Enter your name" required>
+        <input class="outline-none p-2 m-2 rounded-lg w-full" id="room" name="room" type="text" placeholder="Enter room name" required>
+        <button class="p-3 bg-green-600 m-2 rounded-lg text-white w-full" type="submit">Join Chat</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
